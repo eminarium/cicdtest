@@ -29,7 +29,7 @@ jobs:
           ruby-version: 3.0
       - name: Build and run test
         env:
-          DATABASE_URL: postgres://postgres:@localhost:5432/test
+          DATABASE_URL: postgres://postgres:@localhost:5432/Cicdtest_test
           RAILS_ENV: test
           POSTGRES_USER: <%= ENV["POSTGRES_USER"] %>
           POSTGRES_PASSWORD: <%= ENV["POSTGRES_PASSWORD"] %>
