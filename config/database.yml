@@ -64,6 +64,8 @@ development:
 test:
   <<: *default
   database: Cicdtest_test
+  adapter: postgresql
+  host: localhost  
   username: <%= ENV["POSTGRES_USER"] %>
   password: <%= ENV["POSTGRES_PASSWORD"] %>
 
