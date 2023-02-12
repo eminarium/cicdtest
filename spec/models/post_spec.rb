@@ -4,7 +4,9 @@ RSpec.describe Post, type: :model do
 
   describe "Validations" do
     subject { 
-      described_class.new(title: "Chicken Biryani",
+      # described_class.new(title: "Chicken Biryani",
+                          # content: "Brief info about Chicken Biryani"
+      Post.new(title: "Chicken Biryani",
                           content: "Brief info about Chicken Biryani"
       )
     }
