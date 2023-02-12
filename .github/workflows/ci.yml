@@ -41,4 +41,4 @@ jobs:
           bundle exec rails db:create
           bundle exec rails db:migrate
           bundle exec rails generate rspec:install
-          RAILS_ENV=test rspec
+          RAILS_ENV=test rake spec
